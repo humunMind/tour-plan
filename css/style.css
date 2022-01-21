@@ -378,6 +378,9 @@ template {
           align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .navbar-top__menu-button {
@@ -526,6 +529,10 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 16px;
     height: 11px;
     border: none;
@@ -533,7 +540,7 @@ template {
   }
   .menu-button__line {
     width: 16px;
-    width: 1px;
+    height: 1px;
     background-color: #333333;
   }
 }

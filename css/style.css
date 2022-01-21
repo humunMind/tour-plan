@@ -3,11 +3,12 @@
 /** базовые настройки **/
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Mulish',sens-serif;
+  font-family: "Mulish", sens-serif;
+  background-color: #f5fafe;
   /** color: $text-color **/
 }
 
@@ -68,7 +69,7 @@ h1 {
  */
 hr {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -106,7 +107,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -254,7 +255,7 @@ fieldset {
  */
 legend {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -289,7 +290,7 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -364,121 +365,6 @@ template {
   display: none;
 }
 
-/** Cтили для блоков **/
-.navbar {
-  background-color: #FFFFFF;
-}
-
-.navbar-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.navbar-top__menu-button {
-  display: none;
-}
-
-.navbar__menubutton {
-  display: none;
-}
-
-.navbar__search {
-  margin-right: auto;
-  margin-left: 108px;
-}
-
-.navbar-battom {
-  background-color: #0A223D;
-}
-
-.navbar-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 31px 0px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar-menu__link {
-  font-size: 14px;
-  line-height: 18px;
-  text-decoration: none;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-
-.logo {
-  width: 177px;
-}
-
-.search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  height: 40px;
-  border-radius: 6px;
-}
-
-.search__input {
-  width: 350px;
-  height: 100%;
-  padding-left: 23px;
-  padding-right: 75px;
-  font-size: 12px;
-  line-height: 15px;
-  border: none;
-  background-color: #F5FAFE;
-}
-
-.search__button {
-  background-color: #EC1F46;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 65px;
-  border: none;
-}
-
-.user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-decoration: none;
-}
-
-.user__avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.user__name {
-  font-size: 12px;
-  line-height: 18px;
-}
-
 /** Миксины **/
 /** Адаптивы **/
 @media (max-width: 1200px) {
@@ -516,7 +402,9 @@ template {
     max-width: 700px;
     width: 92%;
   }
-  .navbar-menu, .navbar__user, .navbar__search {
+  .navbar-menu,
+  .navbar__user,
+  .navbar__search {
     display: none;
   }
   .menu-button {
@@ -524,15 +412,15 @@ template {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     width: 16px;
     height: 11px;
     border: none;
@@ -549,5 +437,189 @@ template {
   .logo {
     width: 99px;
   }
+}
+
+/** Cтили для блоков **/
+/** шапка **/
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navbar-top__menu-button {
+  display: none;
+}
+
+.navbar__menubutton {
+  display: none;
+}
+
+.navbar__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
+
+.navbar-battom {
+  background-color: #0a223d;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 31px 0px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.navbar-menu__link {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 177px;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  height: 40px;
+  border-radius: 6px;
+}
+
+.search__input {
+  width: 350px;
+  height: 100%;
+  padding-left: 23px;
+  padding-right: 75px;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  background-color: #f5fafe;
+}
+
+.search__button {
+  background-color: #ec1f46;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 65px;
+  border: none;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.user__name {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/** breadcrumb **/
+.breadcrumb-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 18px 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.breadcrumb-list__item {
+  font-size: 10px;
+  line-height: 13px;
+}
+
+.breadcrumb-list__item:not(:last-child)::after {
+  content: "/";
+  margin-right: 4px;
+}
+
+.breadcrumb-list__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/** Hotel **/
+.hotel {
+  padding-top: 23px;
+  padding-bottom: 70px;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.hotel-name {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+
+.hotel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.stars {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

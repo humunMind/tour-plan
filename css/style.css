@@ -594,6 +594,11 @@ template {
   line-height: 18px;
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 /** Миксины **/
 /** Адаптивы **/
 @media (max-width: 1200px) {
@@ -660,8 +665,8 @@ template {
   }
   /** блок hotel **/
   .stars {
-    -ms-flex-preferred-size: content;
-        flex-basis: content;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .hotel {
     padding-top: 8px;

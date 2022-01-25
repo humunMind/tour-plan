@@ -20,6 +20,11 @@ img {
   max-width: 100%;
 }
 
+.button {
+  background-color: #EC1F46;
+  color: #FFFFFF;
+}
+
 /** Подключение normalize **/
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -562,6 +567,28 @@ template {
   line-height: 15px;
 }
 
+.hotel-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hotel-grid__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
@@ -583,6 +610,7 @@ template {
   max-width: 65px;
   min-height: 45px;
   border-radius: 4px;
+  /** Слайдер и grid **/
 }
 
 .rating-text {
@@ -603,7 +631,7 @@ template {
   width: 100%;
   height: 450px;
   position: relative;
-  background-radius: 8px;
+  border-radius: 8px;
 }
 
 .swiper::after {
@@ -642,6 +670,117 @@ template {
 .swiper-button--prev {
   background-image: url(../img/arrow-prev.svg);
   left: 18px;
+}
+
+.booking {
+  font-family: Nunito;
+  background-color: #0A223D;
+  color: #FFFFFF;
+  border-radius: 8px;
+  width: 350px;
+  min-height: 210px;
+  padding: 28px;
+}
+
+.booking__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 9px;
+}
+
+.booking__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.booking__start {
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.booking__pricetag {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.booking__per-room {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.booking__icon {
+  margin-right: 9px;
+}
+
+.booking__button {
+  padding: 13px;
+  font-size: 14px;
+  line-height: 19px;
+  width: 100%;
+  min-height: 45px;
+  border-radius: 4px;
+  border: none;
+}
+
+.call-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 17px;
+}
+
+.call-center__numder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.call-center__num {
+  margin-left: 8px;
+}
+
+.map {
+  width: 347px;
+  height: 213px;
+  background-color: #000;
 }
 
 /** Миксины **/

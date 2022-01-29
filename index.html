@@ -16,7 +16,7 @@
   </head>
 
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobil--fixed ">
       <div class="container navbar-wrapper">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -26,7 +26,7 @@
               class="logo__img"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
             <input
               type="text"
               class="search__input"
@@ -36,7 +36,7 @@
               <img src="img/search__img.svg" alt="search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user--mobile--hidden">
             <img src="img/avatar.jpg" alt="avatar" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
@@ -50,15 +50,29 @@
         <!-- /.navbar-top -->
       </div>
       <!-- /.container -->
-      <div class="navbar-battom">
+      <div class="navbar-battom ">
         <nav class="nav navbar-menu container">
-          <a href="#" class="navbar-menu__link">All Deals</a>
-          <a href="#" class="navbar-menu__link">Hotels</a>
-          <a href="#" class="navbar-menu__link">Activities</a>
-          <a href="#" class="navbar-menu__link">Hotel Day Packages</a>
-          <a href="#" class="navbar-menu__link">Restaurants</a>
-          <a href="#" class="navbar-menu__link">Events</a>
-          <a href="#" class="navbar-menu__link">Rodrigues</a>
+          <a href="#" class="user navbar__user navbar__user--mobile--visible navbar-menu__item">
+            <img src="img/avatar.jpg" alt="avatar" class="user__avatar" />
+            <span class="user__name user__name--light">Nathan</span>
+          </a>
+          <form action="#" class="search navbar__search navbar__search--mobile--visible navbar-menu__item">
+            <input
+              type="text"
+              class="search__input"
+              placeholder="Search Location"
+            />
+            <button class="button search__button">
+              <img src="img/search__img.svg" alt="search" />
+            </button>
+          </form>
+          <a href="#" class="navbar-menu__link navbar-menu__item">All Deals</a>
+          <a href="#" class="navbar-menu__link navbar-menu__item">Hotels</a>
+          <a href="#" class="navbar-menu__link navbar-menu__item">Activities</a>
+          <a href="#" class="navbar-menu__link navbar-menu__item">Hotel Day Packages</a>
+          <a href="#" class="navbar-menu__link navbar-menu__item">Restaurants</a>
+          <a href="#" class="navbar-menu__link navbar-menu__item">Events</a>
+          <a href="#" class="navbar-menu__link navbar-menu__item">Rodrigues</a>
         </nav>
         <!-- /.navbar-menu -->
       </div>

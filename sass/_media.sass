@@ -74,7 +74,7 @@
       &-network
         grid-row: 1/2
         grid-column: span 4
-        align-items: center
+        align-self: center
     &__categories
       grid-row: 2/3
       grid-column: span 2
@@ -93,9 +93,39 @@
   .container
     max-width: 576px
     width: 92%
+  body
+    padding-top: 78px
   .navbar
-    &-menu,&__user,&__search
+    &--mobil
+      &--fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 99
+    &__user,&__search
+      &--mobile
+        &--hidden
+          display: none
+        &--visible
+          display: flex
+    &__user
+      flex-direction: column
+      justify-content: center
+    &-battom
       display: none
+      position: fixed
+      left: 0
+      right: 0
+      top: 78px
+      bottom: 0
+      padding-top: 30px
+      &--visible
+        display: block
+    &-menu
+      flex-direction: column
+      &__item
+        margin-bottom: 20px
   .menu
     &-button
       display: flex
@@ -110,6 +140,12 @@
         width: 16px
         height: 1px
         background-color: $text-color
+  .user
+    &__name
+      &--light
+        color: $white
+        margin-left: 0
+        margin-top: 10px
   /** блок hotel **/
   .stars
     flex-basis: auto

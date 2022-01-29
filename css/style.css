@@ -486,6 +486,10 @@ template {
   line-height: 18px;
 }
 
+.navbar__user--mobile--visible, .navbar__search--mobile--visible {
+  display: none;
+}
+
 /** breadcrumb **/
 .breadcrumb-list {
   display: -webkit-box;
@@ -1356,9 +1360,9 @@ template {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     grid-column: span 4;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .footer__categories {
     -ms-grid-row: 2;
@@ -1389,8 +1393,53 @@ template {
     max-width: 576px;
     width: 92%;
   }
-  .navbar-menu, .navbar__user, .navbar__search {
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobil--fixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 99;
+  }
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
+  }
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-battom {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 78px;
+    bottom: 0;
+    padding-top: 30px;
+  }
+  .navbar-battom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
   }
   .menu-button {
     display: -webkit-box;
@@ -1415,6 +1464,11 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .user__name--light {
+    color: #FFFFFF;
+    margin-left: 0;
+    margin-top: 10px;
   }
   /** блок hotel **/
   .stars {

@@ -466,11 +466,15 @@
             </ul>
           </div>
           <!-- /.footer__contact-details -->
-          <div class="footer__contact-form">
+          <div class="footer__contact-form form">
             <h3 class="footer__title  footer__title--mb-30">Send us a message</h3>
             <form action="send.php" method="post" class="form footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+              </div>
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+              </div>
               <textarea  class="input message footer__message" placeholder="Message" name="message"></textarea>
               <button class="button sect-button footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -491,13 +495,14 @@
         </a>
         <h3 class="modal__title  modal__title--mb-30">Send us a message</h3>
         <form action="send.php" method="post" class="form modal__form">
-          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" required>
           <input
             type="text"
             class="input modal__input"
             placeholder="*Email"
             name="email"
+            required
           />
           <textarea  class="input modal__message" placeholder="Message" name="message"></textarea>
           <button class="button sect-button modal__button">Send</button>
@@ -509,6 +514,7 @@
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

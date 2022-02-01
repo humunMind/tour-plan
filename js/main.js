@@ -45,4 +45,22 @@ $(document).ready(function(){
     modalDialog.removeClass("modal__dialog--visible");
     event.preventDefault();
   }
+  /* Обработка формы */
+  $(".form").each(function() {
+    $(this).validate({
+      messages: {
+        name: {
+          required: "Укажите имя",
+          minlength: "Имя должно быть не короче 2 букв",
+        },
+        email: {
+          required: "Укажите email",
+          email: "Ваш email должен быть в формате name@domain.com"
+        },
+        phone: {
+          required: "Телефон обязателен",
+        },
+      },
+    });
+  });
 });

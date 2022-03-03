@@ -23,7 +23,7 @@ $(document).ready(function () {
 
   var menuButton = $(".menu-button");
   menuButton.on("click", function () {
-    console.log("Клик по кнопке Меню НОвый");
+    console.log("Клик по кнопке Меню Новый");
     $(".navbar-battom").toggleClass("navbar-battom--visible");
   });
 
@@ -50,15 +50,16 @@ $(document).ready(function () {
     $(this).validate({
       messages: {
         name: {
-          required: "Укажите имя",
-          minlength: "Имя должно быть не короче 2 букв",
+          required: "Enter a name",
+          minlength: "The name must be at least 2 letters long",
         },
         email: {
-          required: "Укажите email",
-          email: "Ваш email должен быть в формате name@domain.com",
+          required: "Specify email",
+          email: "Your email should be in the format name@domain.com",
         },
         phone: {
-          required: "Телефон обязателен",
+          required: "Phone is required",
+          minlength: "The name must be at least 2 letters long"
         },
       },
     });

@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -232,6 +234,7 @@
             class="subscribe__input"
             placeholder="Your email address"
             name="email"
+            required
           />
           <button class="button subscribe__button">Send</button>
         </form>
@@ -299,41 +302,41 @@
       <div class="container activities__container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card " data-aos="fade-up" data-aos-delay="200">
+          <div class="card activities__card " data-aos="fade-up" data-aos-delay="150">
             <img
               src="img/activities-1.jpg"
               alt="Tamarind falls hiking trip - full day"
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button button">Book Now</button>
+            <button data-toggle="modal" class="card__button button">Book Now</button>
           </div>
-          <div class="card activities__card " data-aos="fade-up" data-aos-delay="400">
+          <div class="card activities__card " data-aos="fade-up" data-aos-delay="300">
             <img
               src="img/activities-2.jpg"
               alt="Gymkhana club golf course"
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button button">Book Now</button>
+            <button data-toggle="modal" class="card__button button">Book Now</button>
           </div>
-          <div class="card activities__card " data-aos="fade-up" data-aos-delay="600">
+          <div class="card activities__card " data-aos="fade-up" data-aos-delay="450">
             <img
               src="img/activities-3.jpg"
               alt="Tamarind falls hikingtrip - full day"
               class="card__image"
             />
             <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button button">Book Now</button>
+            <button data-toggle="modal" class="card__button button">Book Now</button>
           </div>
-          <div class="card activities__card " data-aos="fade-up" data-aos-delay="800">
+          <div class="card activities__card " data-aos="fade-up" data-aos-delay="600">
             <img
               src="img/activities-4.jpg"
               alt="The blue marine discoveryquest"
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button button">Book Now</button>
+            <button data-toggle="modal" class="card__button button">Book Now</button>
           </div>
         </div>
         <!-- /.activities-wrapper -->
@@ -410,13 +413,13 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link">
+              <a href="https://www.facebook.com/channel/Best_tour_plan" class="footer__link">
                 <img src="img/fb.svg" alt="icon: facebook"  />
               </a>
-              <a href="#" class="footer__link">
+              <a href="https://www.youtube.com/channel/Best_tour_plan" class="footer__link">
                 <img src="img/yt.svg" alt="icon: youtube" />
               </a>
-              <a href="#" class="footer__link">
+              <a href="https://instagram.com/Best_tour_plan" class="footer__link">
                 <img src="img/inst.svg" alt="icon: instagram "  />
               </a>
             </div>
@@ -478,7 +481,7 @@
                 <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
               </div>
               <div class="footer__input-group">
-                <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+                <input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone" required  minlength="11" maxlength="11">
               </div>
               <textarea  class="input message footer__message" placeholder="Message" name="message"></textarea>
               <button class="button sect-button footer__button">Send</button>
@@ -498,10 +501,10 @@
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="close" >
         </a>
-        <h3 class="modal__title  modal__title--mb-30">Send us a message</h3>
+        <h3 class="modal__title  modal__title--mb-30">BOOKING</h3>
         <form action="send.php" method="post" class="form modal__form">
           <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-          <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+          <input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="11" maxlength="11">
           <input
             type="email"
             class="input modal__input"

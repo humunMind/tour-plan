@@ -60,8 +60,8 @@ $(document).ready(function () {
         phone: {
           required: "Phone is required",
           phone: "Your phone should be in the format phone",
-          minlength: "The name must consist of at least 11 letters",
-          maxlength: "The name must consist of no more than 11 letters"
+          minlength: "Enter the correct number",
+          maxlength: "Enter the correct number"
         },
       },
     });

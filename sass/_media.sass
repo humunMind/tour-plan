@@ -18,11 +18,17 @@
     &__input
       &-group
         flex-basis: 100%
+    &__legal
 
 @media (max-width:992px)
   .container,
   .newsletter-wrapper
     max-width: 700px
+  .modal
+    &__dialog
+      padding: 33px 60px
+    &__button
+      min-width: 140px
   .logo
     width: 132px
   .navbar
@@ -43,6 +49,7 @@
       &__right
         flex-direction: row
     &__slider
+      margin-left: 0px
       width: 100%
       margin-bottom: 30px
   .map
@@ -78,11 +85,14 @@
         grid-column: span 4
         align-self: center
     &__categories
+      max-width: 162px
       grid-row: 2/3
       grid-column: span 2
-    &_legal
+    &__legal
       grid-column: span 2
+      margin-left: 18px
     &__additional
+      flex-shrink:
       grid-column: span 2
     &__contact
       &-details
@@ -91,6 +101,10 @@
       &-form
         grid-column: span 5
         grid-row: 4
+    &__buttom
+      &__links
+        grid-column: 1/4
+        justify-content: start
   a:hover
     text-decoration: none
     font-weight: normal
@@ -100,7 +114,7 @@
 
 @media (max-width:768px)
   .container
-    max-width: 576px
+    max-width: 700px
     width: 92%
   body
     padding-top: 78px
@@ -197,9 +211,12 @@
     &-title
       font-size: 20px
       line-height: 25px
+      margin-bottom: 37px
       &__strong
         font-size: 30px
         line-height: 38px
+  .subscribe
+    width: 100%
   .reviews
     &-slider
       &__item
@@ -224,6 +241,14 @@
     &__input
       &-group
         flex-basis: 100%
+    &__buttom
+      &__icons
+        grid-row: 2
+        justify-content: start
+        grid-column: 1/2
+    &__legal
+      margin-left: 0
+
 @media (max-width:576px)
   .logo
     width: 99px
@@ -234,10 +259,15 @@
       height: 250px
   .newsletter
     padding: 76px 0 83px 0
+    &-wrapper
+      align-items: start
     &__title
-      margin-bottom: 37px
-  .subscribe__input
-    width: 100%
+      font-size: 20px
+      line-height: 25px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+
   .reviews
     &__title
       font-size: 18px

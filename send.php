@@ -5,6 +5,7 @@ require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
+
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
